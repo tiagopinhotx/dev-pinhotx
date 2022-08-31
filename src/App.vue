@@ -1,16 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  
+  <Header page_title="Hauhau" logo="center">
+    <img alt="Vue logo" src="./assets/logo.png">
+  </Header>
+  <Main/>
+  <footer-root kind="social-bar"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FooterRoot from './components/Footer/Footer.vue';
+import Header from './components/Header/Header.vue';
+import Main from './components/Main.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Main,
+    HeadStar,
+    FooterRoot,
+  },
 }
 </script>
 
